@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nosso Pequeno Universo</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div id="title"><div id="capaw"><img id="capaimg" src="assets/scenes/capa.png" alt="Capa de Nosso Pequeno Universo: os dois juntos diante da máquina de escrever"><button id="play" aria-label="Toque para começar"></button><button id="cont" hidden></button></div></div>
+<main id="app">
+<header id="hud"><span id="ph"></span><span id="tt"></span><div id="seg"></div></header>
+<div id="stage"><canvas id="game" width="320" height="180" aria-label="Cena em pixel art"></canvas></div>
+<section id="dlg" aria-live="polite"><canvas id="face" width="40" height="42" aria-hidden="true"></canvas><p id="tx"></p><em>▼</em></section>
+<nav id="ctl"><button id="back" hidden>◀ Voltar</button><button id="skip" hidden>Mostrar tudo</button><button id="act" hidden></button></nav>
+<nav id="hsl" aria-label="Objetos da cena"></nav>
+<div id="snd"><button id="mus" title="Som">♪</button><input id="vol" type="range" min="0" max="1" step=".1" value=".5" aria-label="Volume da música"></div>
+</main>
+<script src="assets/manifest.js"></script><script src="js/content.js"></script><script src="js/stages.js"></script><script src="js/engine.js"></script></body></html>
